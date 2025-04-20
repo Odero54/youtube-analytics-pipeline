@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+
+# Environments
+.env
+.venv/
+env/
+venv/
+
+# Logs and outputs
+*.log
+*.out
+*.bak
+
+# Spark & Airflow
+*.crdownload
+*.zip
+*.gz
+*.parquet
+*.orc
+*.avro
+
+# Data Files
+data/raw/
+data/processed/
+*.csv
+*.json
+*.xlsx
+
+# Notebooks Checkpoints
+.ipynb_checkpoints/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# Airflow stuff
+airflow.db
+airflow.cfg
+logs/
+__pycache__/
+
+# PyCharm
+.idea/
