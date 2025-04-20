@@ -1,0 +1,6 @@
+google-api-python-client
+pyspark
+pandas
+psycopg2-binary
+apache-airflow
+python-dotenv
