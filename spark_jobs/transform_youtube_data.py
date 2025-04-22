@@ -31,7 +31,7 @@ def main():
 
     # Load raw YouTube data
     raw_df = spark.read.option("multiline", True).json(
-        "data/raw/raw_youtube_data.json"
+        "/home/george/data_engineering/youtube-analytics-pipeline/data/raw/raw_youtube_data.json"
     )
 
     print("Raw data loaded.")
@@ -69,8 +69,8 @@ def main():
     # Show result
     transformed_df.show(truncate=False)
     
-    # Optionally save the output or return
-    # transformed_df.write.mode("overwrite").parquet("data/processed/transformed_youtube_data.parquet")
+    # Save the output
+    transformed_df.write.mode("overwrite").parquet("/home/george/data_engineering/youtube-analytics-pipeline/data/processed/transformed_youtube_data.parquet")
 
     print("Transformation completed.")
 
